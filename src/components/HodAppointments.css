@@ -1,0 +1,16 @@
+.appointments-page { padding-top: 60px; padding-bottom: 80px; min-height: 65vh; color: #284667; }
+.appointments-page h1 { color: #17365c; font-size: clamp(28px, 4vw, 46px); margin: 24px 0; }
+.appointments-page p { line-height: 1.7; margin: 16px 0; }
+.appointments-roles { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; margin: 32px 0; }
+.appointments-roles article { padding: 28px; border: 1px solid #dce5f1; background: #f5f8fd; border-radius: 14px; }
+.appointments-form { display: grid; gap: 16px; max-width: 440px; margin-top: 24px; }
+.appointments-form input { padding: 14px; border: 1px solid #9caec6; border-radius: 8px; font: inherit; width: 100%; }
+.appointments-page button { cursor: pointer; }
+.appointments-page button:disabled { cursor: wait; opacity: .65; }
+.appointments-page :focus-visible { outline: 3px solid #79a6ee; outline-offset: 4px; }
+.appointments-page .search-button { display: inline-flex; width: fit-content; text-decoration: none; }
+.appointments-form [role=alert] { color: #9b2438; }
+.appointments-mobile-link { display: none; }
+@media (max-width: 600px) { .appointments-roles { grid-template-columns: 1fr; } .appointments-mobile-link { display: inline; font-size: 12px; } }
+
+@media (max-width: 600px) { .nav .mobile-nav-label { display: none; } .appointments-mobile-link { font-size: 11px; } }
